@@ -73,6 +73,7 @@ body{
   display: flex;
   height: calc(100vh - 70px);
   align-items: center;
+  color: #fff;
 }
 
 .hero__texts{
@@ -168,15 +169,16 @@ body{
 /* Projects */
 
 .projects{
-  background: #f2f2f2;
+  background: #fff; /* #f2f2f2  Es color gris*/
 }
 
 .projects__grid{
   display: grid;
   height: 550px;
   grid-template-areas:
-  "img1 img1 img2 img3"
-  "img1 img1 img4 img5";
+  "img1 img1 . . . ."   
+  "img1 img1 . . . .";  /* "img1 img1 img2 img3"
+                           "img1 img1 img4 img5"*/
   gap: 10px;
 }
 
@@ -198,7 +200,7 @@ body{
   grid-area: img1;
 }
 
-.projects__item:nth-of-type(2){
+/*.projects__item:nth-of-type(2){
   grid-area: img2;
 }
 
@@ -211,7 +213,7 @@ body{
 }
 
 .projects__item:nth-of-type(5){
-  grid-area: img5;
+  grid-area: img5; */
 }
 
 .projects__hover{
@@ -241,55 +243,6 @@ body{
 }
 
 /* Testimony */
-
-.testimony__grid{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.testimony__item{
-  width: 95%;
-  margin: 0 auto;
-  background: var(--color-secondary);
-  box-shadow: 0 8px 10px rgba(66,66,66, .5);
-  border-radius: 7px;
-  padding: 30px 25px;
-  color: #fff;
-  margin-bottom: 50px;
-}
-
-.testimony__person{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.testimony__img{
-  width: 100%;
-  min-width: 100px;
-  height: 100px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-right: 30px;
-}
-
-.testimony__name{
-  front-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.testimony__verification{
-  color: #E0AFA0;
-  front-weight: 700;
-}
-
-.testimony__review{
-  front-weight: 300;
-}
 
 /* Footer */
 
@@ -400,18 +353,14 @@ body{
   /* My projects */
 
   .projects__grid{
-    grid-template-areas:
-    "img1 img1 img2 img2"
-    "img1 img1 img3 img3"
-    "img4 img4 img5 img5";
+    grid-template-areas:   /*"img1 img1 img2 img2"
+                             "img1 img1 img3 img3"
+                             "img4 img4 img5 img5"*/
+    "img1 img1"
+    "img1 img1";
   }
 
   /* Testimony */
-
-  .testimony__grid{
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
 
   /* Footer */
 
@@ -473,11 +422,11 @@ body{
 
   .projects__grid{
     grid-template-areas:
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-    "img5";
+    "img1";      /*"img1"   <--Esto es para la tabla en dado caso de tener mas proyectos
+                   "img2"      cada "img#" representa un cuadro de espacio
+                   "img3"
+                   "img4"
+                   "img5";*/              
     height: auto;
     grid-template-rows: repeat(5, 250px);
     grid-auto-rows: 250px;
@@ -485,21 +434,4 @@ body{
   }
 
   /* Testimony */
-
-  .testimony__item{
-    padding: 30px 15px;
-  }
-
-  .testimony__person{
-    flex-direction: column;
-  }
-
-  .testimony__texts{
-    text-align: center;
-  }
-
-  .testimony__img{
-    margin: 0;
-    margin-bottom: 20px;
-  }
 }
