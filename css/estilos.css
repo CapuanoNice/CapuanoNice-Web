@@ -293,7 +293,7 @@ body{
 
 /* Resonsive desing */
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 800px){
   :root{
     --boton-pading: 18px 40px;
   }
