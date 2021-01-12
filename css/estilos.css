@@ -213,8 +213,8 @@ body{
 }
 
 .projects__item:nth-of-type(5){
-  grid-area: img5; */
-}
+  grid-area: img5;
+} */
 
 .projects__hover{
   position: absolute;
