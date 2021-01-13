@@ -214,7 +214,7 @@ body{
 
 .projects__item:nth-of-type(5){
   grid-area: img5;
-}*/
+} */
 
 .projects__hover{
   position: absolute;
@@ -293,7 +293,7 @@ body{
 
 /* Resonsive desing */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1100px){
   :root{
     --boton-pading: 18px 40px;
   }
@@ -334,12 +334,13 @@ body{
   .presentation__copy{
     width: 100%;
   }
+
   .about{
     grid-template-columns: 1fr;
   }
 
   .about.container{
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .about__img--left{
@@ -356,8 +357,8 @@ body{
     grid-template-areas:   /*"img1 img1 img2 img2"
                              "img1 img1 img3 img3"
                              "img4 img4 img5 img5"*/
-    "img1 img1"
-    "img1 img1";
+    "img1"
+    "img1";
   }
 
   /* Testimony */
@@ -373,7 +374,7 @@ body{
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 500px){
   :root{
     --boton-padding: 18px  35px;
   }
