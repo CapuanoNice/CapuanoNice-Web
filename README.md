@@ -1,3 +1,3 @@
-# www.CapuanoNice.live
+# CapuanoNice.live
 
 Esta es la página web de CapuanoNice
