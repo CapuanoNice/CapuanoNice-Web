@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: capuanonice.live
-Token: 39bcd827c38668b272eb8b98e8ae7e617919188eb20e31476702daa94ebba7ee
