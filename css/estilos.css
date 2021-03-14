@@ -250,12 +250,12 @@ body{
   background: var(--color-primary);
 }
 
-.footer__grid{
+/* .footer__grid{
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 20px;
   align-items: center;
-}
+} */
 
 .footer__title{
   front-weight: 400;
